@@ -1,0 +1,12 @@
+
+  <p>
+    <label>Name</label>
+    <input type="text"[(ngModel)]="name" >
+  </p>
+
+<h2>{{ name }}</h2>
+<p (click)="printText()">Click Me</p>
+
+<h2 [class.textcolor]="!name">Good morning!</h2>
+
+<app-students [studentName]="name"></app-students>
